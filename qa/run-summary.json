@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "petId": "naiwa-laugh-v3",
+  "displayName": "奶蛙 NaiWa（交互笑修复版）",
+  "rootCause": "当前 Codex 桌面应用在鼠标指针进入宠物区域时切换到 jumping 状态；旧版本只替换了 waving 状态，因此会短暂播放新动作后回到旧 jumping 动作。",
+  "repairs": [
+    "保留 waving 行的四帧捧腹大笑",
+    "将 jumping 行的五帧全部替换为捧腹大笑",
+    "清空 jumping 行未使用的第六至第八格"
+  ],
+  "validation": {
+    "atlas": "PASS",
+    "frameInspection": "PASS",
+    "independentVisualQa": "PASS",
+    "width": 1536,
+    "height": 2288,
+    "spriteVersionNumber": 2,
+    "warnings": 0,
+    "errors": 0,
+    "sha256": "D1C9102FEFC9F296CDA19B07AD3540892DAF533489D86574342C24E18233010C"
+  },
+  "installedPath": "C:\\Users\\zheng\\.codex\\pets\\naiwa-laugh-v3",
+  "selectedAvatarId": "custom:naiwa-laugh-v3"
+}

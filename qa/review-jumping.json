@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames",
+  "states": [
+    "jumping"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15969,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 91
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17080,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 76
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22122,
+          "bbox": [
+            19,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 117
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17480,
+          "bbox": [
+            33,
+            5,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 71
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\outputs\\naiwa-interaction-repair\\frames\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15974,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 90
+        }
+      ]
+    }
+  ]
+}

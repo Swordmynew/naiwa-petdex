@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "atlas": "spritesheet.webp",
+  "atlas_row": 7,
+  "static_cells_identical": true,
+  "unused_cells_transparent": true,
+  "states": [
+    "running"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "spritesheet.webp#row7-col0",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "spritesheet.webp#row7-col1",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "spritesheet.webp#row7-col2",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "spritesheet.webp#row7-col3",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "spritesheet.webp#row7-col4",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "spritesheet.webp#row7-col5",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17436,
+          "bbox": [
+            37,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

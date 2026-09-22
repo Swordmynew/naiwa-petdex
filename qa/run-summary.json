@@ -1,24 +1,27 @@
 {
   "ok": true,
-  "petId": "naiwa-laugh-v3",
-  "displayName": "奶蛙 NaiWa（交互笑修复版）",
-  "rootCause": "当前 Codex 桌面应用在鼠标指针进入宠物区域时切换到 jumping 状态；旧版本只替换了 waving 状态，因此会短暂播放新动作后回到旧 jumping 动作。",
+  "petId": "naiwa-laugh-v4",
+  "displayName": "奶蛙 NaiWa（大笑与思考版）",
+  "rootCause": "Codex 思考处理使用 running 状态，因此静态思考姿势应替换图集第 7 行，而不是左右跑步行。",
   "repairs": [
     "保留 waving 行的四帧捧腹大笑",
     "将 jumping 行的五帧全部替换为捧腹大笑",
-    "清空 jumping 行未使用的第六至第八格"
+    "清空 jumping 行未使用的第六至第八格",
+    "将 running 行的六个有效格替换为逐像素相同的静态托腮思考姿势",
+    "保持 running 行未使用的第七至第八格透明"
   ],
   "validation": {
     "atlas": "PASS",
     "frameInspection": "PASS",
+    "staticFrameIdentity": "PASS",
     "independentVisualQa": "PASS",
     "width": 1536,
     "height": 2288,
     "spriteVersionNumber": 2,
     "warnings": 0,
     "errors": 0,
-    "sha256": "D1C9102FEFC9F296CDA19B07AD3540892DAF533489D86574342C24E18233010C"
+    "sha256": "05401DBE6E75515B6EAB796C0D567D169E668A7AD3406871D95768BEBF993CC1"
   },
-  "installedPath": "C:\\Users\\zheng\\.codex\\pets\\naiwa-laugh-v3",
-  "selectedAvatarId": "custom:naiwa-laugh-v3"
+  "installedPath": "C:\\Users\\zheng\\.codex\\pets\\naiwa-laugh-v4",
+  "selectedAvatarId": "custom:naiwa-laugh-v4"
 }

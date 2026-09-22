@@ -1,6 +1,6 @@
 # 奶蛙 NaiWa · Codex 桌面宠物
 
-一个为 Codex 桌面应用制作的自定义 v2 动画宠物。角色采用圆润的奶黄色 3D 玩具风格，包含待机、跑步、等待、工作、完成反馈、方向注视，以及参考动作视频还原的“捧腹大笑”交互动画。
+一个为 Codex 桌面应用制作的自定义 v2 动画宠物。角色采用圆润的奶黄色 3D 玩具风格，包含待机、跑步、等待、完成反馈、方向注视、参考动作视频还原的“捧腹大笑”交互，以及 Codex 思考处理时显示的静态托腮姿势。
 
 > 这是非官方的同人桌宠项目，与 OpenAI 或相关角色权利方无隶属、授权或背书关系。
 
@@ -8,9 +8,9 @@
 
 ## 动画预览
 
-| 招呼 / 交互大笑 | 鼠标进入 / 跳跃状态大笑 |
-| --- | --- |
-| ![waving belly laugh](qa/previews/waving.gif) | ![jumping belly laugh](qa/previews/jumping.gif) |
+| 招呼 / 交互大笑 | 鼠标进入 / 跳跃状态大笑 | 思考处理中（静态） |
+| --- | --- | --- |
+| ![waving belly laugh](qa/previews/waving.gif) | ![jumping belly laugh](qa/previews/jumping.gif) | ![static thinking pose](qa/previews/thinking.png) |
 
 ## 功能
 
@@ -19,6 +19,7 @@
 - 常规工作、等待、失败和完成反馈
 - 16 个注视方向
 - `waving` 与 `jumping` 两种交互状态均使用捧腹大笑动作
+- Codex 思考处理对应的 `running` 状态使用静态托腮姿势，六个有效格逐像素相同
 - 透明背景、无阴影残留，适合直接作为 Codex v2 宠物图集
 
 ## 安装
@@ -26,17 +27,17 @@
 ### 方法一：下载仓库
 
 1. 下载本仓库并解压。
-2. 在 `%USERPROFILE%\.codex\pets\` 下新建 `naiwa-laugh-v3` 文件夹。
+2. 在 `%USERPROFILE%\.codex\pets\` 下新建 `naiwa-laugh-v4` 文件夹。
 3. 将仓库根目录的 `pet.json` 和 `spritesheet.webp` 复制到该文件夹。
 4. 打开 Codex 的 **Settings → Pets**，点击 **Refresh**。
-5. 选择 **奶蛙 NaiWa（交互笑修复版）**。
+5. 选择 **奶蛙 NaiWa（大笑与思考版）**。
 
 ### 方法二：PowerShell
 
 ```powershell
 git clone https://github.com/Swordmynew/naiwa-petdex.git
 
-$target = Join-Path $env:USERPROFILE ".codex\pets\naiwa-laugh-v3"
+$target = Join-Path $env:USERPROFILE ".codex\pets\naiwa-laugh-v4"
 New-Item -ItemType Directory -Force -Path $target | Out-Null
 Copy-Item -LiteralPath ".\naiwa-petdex\pet.json" -Destination $target -Force
 Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -Force
@@ -53,7 +54,7 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
 | 网格 | 8 列 × 11 行 |
 | 单帧尺寸 | 192 × 208 |
 | 透明通道 | RGBA |
-| SHA-256 | `D1C9102FEFC9F296CDA19B07AD3540892DAF533489D86574342C24E18233010C` |
+| SHA-256 | `05401DBE6E75515B6EAB796C0D567D169E668A7AD3406871D95768BEBF993CC1` |
 
 标准动画行如下：
 
@@ -66,7 +67,7 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
 | 4 | `jumping` | 5 | 鼠标进入或互动时的捧腹大笑 |
 | 5 | `failed` | 8 | 失败或取消反馈 |
 | 6 | `waiting` | 6 | 等待用户输入 |
-| 7 | `running` | 6 | 工作处理中 |
+| 7 | `running` | 6 | 静态托腮思考；六格同图、无动画 |
 | 8 | `review` | 6 | 完成、等待查看 |
 | 9–10 | `look` | 16 | 16 个注视方向 |
 
@@ -79,6 +80,12 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
 - 第 4 行未使用的三个单元格保持全透明。
 
 详细修复记录位于 [`qa/repair-notes.md`](qa/repair-notes.md)。
+
+## 静态思考姿势更新
+
+Codex 接收输入并进行思考或处理时会使用第 7 行 `running` 状态。本版本根据用户提供的参考图，将该状态替换为一只手托腮、另一只手托住手肘的完整全身姿势。
+
+为了确保它完全静止，同时又满足 Codex v2 图集对该状态六个有效格的读取规则，六格使用逐像素相同的图像。应用即使继续轮播帧，宠物也不会发生动作、位移或抖动。
 
 ## 验证
 
@@ -94,6 +101,7 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
 
 - [`validation.json`](validation.json)：完整图集验证报告
 - [`qa/review-jumping.json`](qa/review-jumping.json)：大笑交互帧检查
+- [`qa/review-thinking.json`](qa/review-thinking.json)：静态思考帧一致性检查
 - [`qa/run-summary.json`](qa/run-summary.json)：修复与安装摘要
 - [`qa/chroma-despill.json`](qa/chroma-despill.json)：边缘去色键报告
 - [`qa/video-motion-reference.png`](qa/video-motion-reference.png)：动作参考帧
@@ -111,12 +119,14 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
     ├── contact-sheet.png
     ├── repair-notes.md
     ├── review-jumping.json
+    ├── review-thinking.json
     ├── run-summary.json
     ├── chroma-despill.json
     ├── video-motion-reference.png
     └── previews/
         ├── waving.gif
-        └── jumping.gif
+        ├── jumping.gif
+        └── thinking.png
 ```
 
 ## License
@@ -127,4 +137,4 @@ Copy-Item -LiteralPath ".\naiwa-petdex\spritesheet.webp" -Destination $target -F
 
 ### English summary
 
-NaiWa is a custom Codex desktop pet using the v2 8×11 sprite format. It includes idle, running, task-state, 16-direction look, and video-inspired belly-laugh interactions. Copy `pet.json` and `spritesheet.webp` to `%USERPROFILE%\.codex\pets\naiwa-laugh-v3`, refresh Pets in Codex Settings, and select **奶蛙 NaiWa（交互笑修复版）**.
+NaiWa is a custom Codex desktop pet using the v2 8×11 sprite format. It includes idle, directional running, task states, 16-direction look, video-inspired belly-laugh interactions, and a completely static hand-on-chin thinking pose for the processing state. Copy `pet.json` and `spritesheet.webp` to `%USERPROFILE%\.codex\pets\naiwa-laugh-v4`, refresh Pets in Codex Settings, and select **奶蛙 NaiWa（大笑与思考版）**.

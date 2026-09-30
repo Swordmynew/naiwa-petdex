@@ -1,29 +1,9 @@
 {
   "ok": true,
-  "input": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\.work\\thinking-repair\\final\\spritesheet.png",
-  "output": "C:\\Users\\zheng\\Desktop\\2026-09-17\\hatch-pet-c-users-zheng-codex\\.work\\thinking-repair\\final\\spritesheet-clean.png",
-  "chroma_key": "#00FFFF",
-  "algorithm": "edge-local-chroma-spill-suppression",
-  "strength": 1,
-  "edge_radius": 5,
-  "spill_tolerance": 0.15,
-  "minimum_saturation": 0.1,
-  "changed_pixels": 130,
-  "decontaminated_pixels": 130,
-  "spill_suppressed_pixels": 130,
-  "rejected_pixels": 0,
-  "changed_by_cell": {
-    "r4c2": 69,
-    "r5c7": 22,
-    "r4c4": 9,
-    "r5c1": 6,
-    "r9c0": 6,
-    "r10c6": 5,
-    "r0c0": 3,
-    "r0c6": 3,
-    "r4c1": 3,
-    "r4c0": 2,
-    "r4c3": 2
-  },
-  "alpha_preserved": true
+  "scope": "row3 + row4 outer antialiasing boundary",
+  "method": "known-white foreground decontamination in linear light; premultiplied-alpha resize",
+  "outer_white_halo_pixels_initial": 5339,
+  "outer_white_halo_pixels_after": 204,
+  "outer_white_halo_reduction_percent": 96.18,
+  "transparent_rgb_residue_pixels": 0
 }

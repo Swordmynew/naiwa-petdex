@@ -1,0 +1,74 @@
+{
+  "source_video": "E:\\垃圾桶\\milkfrog\\绷住.mp4",
+  "source_resolution": [
+    592,
+    1280
+  ],
+  "source_timestamps_seconds": [
+    1.5,
+    1.6,
+    1.7,
+    1.8,
+    1.9,
+    2.0,
+    2.1,
+    2.2,
+    2.3,
+    2.4,
+    2.5,
+    2.6,
+    2.7,
+    2.8,
+    2.9,
+    3.0
+  ],
+  "source_frame_interval_seconds": 0.1,
+  "spritesheet_resolution": [
+    1536,
+    2288
+  ],
+  "frame_grid": {
+    "width": 192,
+    "height": 208,
+    "columns": 8,
+    "rows": 11
+  },
+  "row3_row4_indices": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "animation_fps": 8,
+  "source_union_bbox_in_roi": [
+    103,
+    176,
+    508,
+    834
+  ],
+  "source_roi": [
+    20,
+    170,
+    572,
+    1080
+  ],
+  "uniform_scale": 0.30395137,
+  "non_uniform_scaling": false,
+  "matting": "known-white decontamination in linear light + premultiplied-alpha Lanczos resize",
+  "interior_only_sharpening": true,
+  "outer_white_halo_pixels_initial": 5339,
+  "outer_white_halo_pixels_before_this_pass": 1589,
+  "outer_white_halo_pixels_after": 204
+}

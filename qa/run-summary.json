@@ -2,26 +2,30 @@
   "ok": true,
   "petId": "naiwa-laugh-v4",
   "displayName": "奶蛙 NaiWa（大笑与思考版）",
-  "rootCause": "Codex 思考处理使用 running 状态，因此静态思考姿势应替换图集第 7 行，而不是左右跑步行。",
+  "rootCause": "原视频白底已烘焙进抗锯齿边缘；直接阈值抠图、直通道缩放与边缘锐化共同造成白色毛边。",
   "repairs": [
-    "保留 waving 行的四帧捧腹大笑",
-    "将 jumping 行的五帧全部替换为捧腹大笑",
-    "清空 jumping 行未使用的第六至第八格",
-    "将 running 行的六个有效格替换为逐像素相同的静态托腮思考姿势",
-    "保持 running 行未使用的第七至第八格透明"
+    "在综合色光中根据已知白底反算边缘 Alpha 与前景颜色，移除白底污染",
+    "使用预乘 Alpha 的 Lanczos 等比缩放，防止透明边缘重新混入白色",
+    "锐化仅应用于腐蚀后的不透明内部，完全避开轮廓",
+    "排除脚下低饱和白色投影，并保留棕色脚掌",
+    "预览 GIF 改为深色实底和平滑 2× 缩放，避免 GIF 透明色与最近邻放大制造假毛边"
   ],
   "validation": {
-    "atlas": "PASS",
-    "frameInspection": "PASS",
-    "staticFrameIdentity": "PASS",
-    "independentVisualQa": "PASS",
-    "width": 1536,
-    "height": 2288,
-    "spriteVersionNumber": 2,
-    "warnings": 0,
-    "errors": 0,
-    "sha256": "05401DBE6E75515B6EAB796C0D567D169E668A7AD3406871D95768BEBF993CC1"
-  },
-  "installedPath": "C:\\Users\\zheng\\.codex\\pets\\naiwa-laugh-v4",
-  "selectedAvatarId": "custom:naiwa-laugh-v4"
+    "status": "PASS",
+    "runtimeFrames": 16,
+    "uniqueFrames": 16,
+    "fps": 8,
+    "whiteHaloPixelsInitial": 5339,
+    "whiteHaloPixelsAfter": 204,
+    "whiteHaloReductionPercent": 96.18,
+    "pixelsChangedOutsideRow3Row4": 0,
+    "transparentRgbResiduePixels": 0,
+    "sha256": "30825CA73A7A4D2AB7EC689A7EF4D2649693A016A5C3FC5A608FB18820B7E9B0",
+    "thinkingStateFrames": 6,
+    "thinkingCellsIdentical": true,
+    "thinkingLoop": true,
+    "thinkingFps": 6,
+    "thinkingRatioDeltaFromIdlePercent": -1.89,
+    "thinkingVisiblePixelsChangedOutsideRow7": 0
+  }
 }

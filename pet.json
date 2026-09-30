@@ -3,5 +3,42 @@
   "displayName": "奶蛙 NaiWa（大笑与思考版）",
   "description": "奶黄色圆润桌宠；保留捧腹大笑交互，并在 Codex 思考处理中显示静态托腮姿势。",
   "spriteVersionNumber": 2,
-  "spritesheetPath": "spritesheet.webp"
+  "spritesheetPath": "spritesheet.webp",
+  "frame": {
+    "width": 192,
+    "height": 208,
+    "columns": 8,
+    "rows": 11
+  },
+  "animations": {
+    "running": {
+      "frames": [56, 57, 58, 59, 60, 61],
+      "fps": 6,
+      "loop": true
+    },
+    "waving": {
+      "frames": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "fps": 8,
+      "loop": false,
+      "fallback": "idle"
+    },
+    "wave": {
+      "frames": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "fps": 8,
+      "loop": false,
+      "fallback": "idle"
+    },
+    "jumping": {
+      "frames": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "fps": 8,
+      "loop": false,
+      "fallback": "idle"
+    },
+    "bounce": {
+      "frames": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "fps": 8,
+      "loop": false,
+      "fallback": "idle"
+    }
+  }
 }

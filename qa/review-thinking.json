@@ -3,6 +3,9 @@
   "atlas": "spritesheet.webp",
   "atlas_row": 7,
   "static_cells_identical": true,
+  "runtime_frames": [56, 57, 58, 59, 60, 61],
+  "runtime_fps": 6,
+  "runtime_loop": true,
   "unused_cells_transparent": true,
   "states": [
     "running"
@@ -14,7 +17,7 @@
       "state": "running",
       "expected_frames": 6,
       "actual_frames": 6,
-      "extraction_method": null,
+      "extraction_method": "copied existing normal-proportion hand-on-chin pose from row8-col4",
       "ok": true,
       "errors": [],
       "warnings": [],
@@ -24,11 +27,11 @@
           "file": "spritesheet.webp#row7-col0",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
@@ -39,11 +42,11 @@
           "file": "spritesheet.webp#row7-col1",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
@@ -54,11 +57,11 @@
           "file": "spritesheet.webp#row7-col2",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
@@ -69,11 +72,11 @@
           "file": "spritesheet.webp#row7-col3",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
@@ -84,11 +87,11 @@
           "file": "spritesheet.webp#row7-col4",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
@@ -99,11 +102,11 @@
           "file": "spritesheet.webp#row7-col5",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17436,
+          "nontransparent_pixels": 14284,
           "bbox": [
-            37,
+            44,
             5,
-            155,
+            148,
             203
           ],
           "edge_pixels": 0,
